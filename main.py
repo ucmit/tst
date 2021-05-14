@@ -1,5 +1,5 @@
 # Импортируем настройки бота
-import conf
+# import conf
 import discord
 from discord.ext import commands
 import img_handler as imhl
@@ -172,4 +172,5 @@ async def fight(ctx:commands.Context):
 """
     Запуск бота
 """
-bot.run(conf.bot_token)
+# bot.run(conf.bot_token)
+bot.run(os.environ["BOT_TOKEN"])
